@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>LifeRing MainPage</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,15 +16,15 @@
       <div class="navContent">
         <ul>
           <div>
-            <li>ScanRing</li>
+            <li>lifeRing</li>
           </div>
           <div class="navTxt">
-            <li>Why ScanRing</li>
-            <li>How it works</li>
-            <li>About us</li>
+            <a href="#scanRing"><li>Why ScanRing</li></a>
+            <a href="#subscribe"><li>Subscribe plan</li></a>
+            <a href="aboutUs.html"><li>About us</li></a>
           </div>
           <div class="preOrderNav">
-            <li>Pre-order</li>
+            <a style="text-decoration: none;"   href="https://buy.stripe.com/test_cN22b20JCb2gaL6288"><li>Pre-order</li></a>
           </div>
         </ul>
       </div>
@@ -35,27 +35,27 @@
           seamless.
         </p>
 
-        <button>Pre-Order</button>
+        <a href="https://buy.stripe.com/test_cN22b20JCb2gaL6288" style="color: white;">Pre-Order</a>
       </div>
     </div>
 
     <!-- 2 La presentation section -->
 
-    <div class="mainTextsec2">
+    <div class="mainTextsec2" >
       <h2>With LifeRing, your body data becomes actionable insights.</h2>
     </div>
 
     <div class="sec2contain">
       <div>
         <img
-          src="../site_anglais/images/presensationImage.webp"
+          src="images/presensationImage.webp"
           alt=""
           width="1000"
         />
       </div>
 
       <div class="sec2text">
-        <h1>Why Health ring</h1>
+        <h1 id="scanRing">Why lifeRing</h1>
         <ul>
           <li>
             <strong>Health Data Tailored to You:</strong> Our ring goes beyond
@@ -97,18 +97,64 @@
 
 
 
-
+    <!-- subscribe part -->
+    <div class="screen" id="subscribe">
+      <div class="title">
+          <h1>Pricing Plans</h1>
+      </div>
+      <div class="descpicture"></div>
+      <div class="container">
+          <div class="containeryears">
+              <div class="yearsbutton" id="monthly">
+                  <button>monthly</button>
+              </div>
+              <div class="yearsbutton" id="yearthly">
+                  <button>yearly</button>
+              </div>
+          </div>
+      </div>
+      <div class="cardcontainer">
+          <div class="card" id="basic">
+              <h1>Silver</h1>
+              <h2>Free</h2>
+              <ul>
+                  <i class='bx bx-check'>Ring Kit : 349.99$</i>
+                  <i class='bx bx-check'>0$ per month</i>
+                  <i class='bx bx-check'>Customizable Data</i>
+              </ul>
+              <a href="https://buy.stripe.com/test_cN22b20JCb2gaL6288"><button>Select Package</button></a>
+          </div>
+          <div class="card" id="gold">
+              <h1>Gold</h1>
+              <h2 id="subs">49.99$</h2>
+              <ul>
+                  <i class='bx bx-check'>Ring kit : 349.99$</i>
+                  <i class='bx bx-check'>Customizable Data</i>
+                  <i class='bx bx-check'>Pills</i>
+              </ul>
+              <a href="https://buy.stripe.com/test_cN22b20JCb2gaL6288"><button>Select Package</button></a>
+          </div>
+          <div class="card" id="premium">
+              <h1>Platinum</h1>
+              <h2>139.99$</h2>
+              <ul>
+                  <i class='bx bx-check'>Ring kit : 349.99$</i>
+                  <i class='bx bx-check'>Customizable Data</i>
+                  <i class='bx bx-check'>Pills</i>
+                  <i class='bx bx-check'>Customizable Food Plan</i>
+                  <i class='bx bx-check'>Special Coach Feedback</i>
+              </ul>
+              <a href="https://buy.stripe.com/test_cN22b20JCb2gaL6288"><button>Select Package</button></a>
+          </div>
+      </div>
+  </div>
 
     <!-- le footer -->
 
     <footer>
       <div class="footleft">
-        <img
-          id="footimage"
-          src="https://images.unsplash.com/photo-1631421272017-d6ca35c1d85d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="ring JC-Bailey"
-        />
-        <button id="footbutton" href="ou y'a le Subscribe">Subscribe</button>
+        
+        <a href="https://buy.stripe.com/test_cN22b20JCb2gaL6288"><button id="footbutton" href="https://buy.stripe.com/test_cN22b20JCb2gaL6288">Subscribe</button></a>
       </div>
       <div class="info">
         <div id="company">
@@ -122,14 +168,19 @@
         <div id="support">
           <h2>Support</h2>
           <ol class="listfooter">
-            <li><a class="butfooter" href="Ou y'a subscribe">Help ↗</a></li>
+            <li><a class="butfooter" href="https://buy.stripe.com/test_cN22b20JCb2gaL6288">Help ↗</a></li>
             <li><a>Membership</a></li>
             <li><a>My Account</a></li>
           </ol>
         </div>
-        <p id="copyright">© 2024 RingCare All Rights Reserved.</p>
+        <p id="copyright">© 2024 lifeRing All Rights Reserved.</p>
       </div>
       <br />
     </footer>
+
+
+
+
+    
   </body>
 </html>

@@ -73,7 +73,7 @@
 }
 
 .header {
-  background: url(../site_anglais/images/LandingImageRing.webp);
+  background: url(images/LandingImageRing.webp);
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
@@ -91,8 +91,9 @@
   border-radius: 20px;
   color: white;
   font-style: italic;
-  height: 650px;
+  height: 500px;
   overflow: scroll;
+
 }
 
 .headerContent p {
@@ -143,8 +144,14 @@
   display: flex;
   flex-direction: row;
   padding-bottom: 500px;
+  margin-bottom: 30px;
 }
 
+
+a{
+
+  text-decoration: none;
+}
 .sec2text {
   font-size: 30px;
   padding-top: 20px;
@@ -217,7 +224,7 @@
 }
 
 .img3sec3 {
-  background: url(../site_anglais/images/sec3image3.jpg);
+  background: url(images/sec3image3.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -234,6 +241,7 @@ footer {
   height: 300px;
   text-align: center;
   background-color: rgb(46, 44, 43);
+  padding-left: 220px;
 }
 
 #footbutton {
@@ -324,4 +332,156 @@ list-style-type: none;
 margin-top: 40px;
 }
 
+/* subscribe part */
+.title{
+  color: black;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 200;
+}
+.screen {
+  height: 1000px;
+  width: 100%;
+  background-color: rgba(222, 184, 135, 0.397);
+  margin-bottom: 150px;
+}
+.container{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  
+}
+.containeryears{
+  display: flex;
+  height: 50px;
+  width: 200px;
+  border: solid 2px white;
+  align-items: center;
+  justify-content: center;
+}
 
+.containeryears button{
+  height: 50px;
+  width: 100px;
+  font-size: 25px;
+  border: black 1px solid;
+}
+#monthly button{
+  background-color: #10A209;
+  border: solid 2px black;
+}
+
+#yearthly button:hover{
+  cursor: pointer;
+  background-color: grey;
+  transition: 0.5s;
+}
+
+
+.cardcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  height: 500px;
+  width: 100%;
+}
+
+.card{
+  position: relative;
+  margin: 15px;
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card button{
+  border: none;
+  height: 60px;
+  width: 250px;
+  font-size: 20px;
+  margin: 30px;
+  cursor: pointer;
+}
+.card h1{
+  margin-top: 20px;
+  background-color: #C0C0C0;
+  height: 100px;
+  width: 265px;
+  text-align: center;
+  padding-top: 28px;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.card h2{
+  color: white;
+  position: absolute;
+  top: 110px;
+  left: 56px;
+  background-color: black;
+  height:50px;
+  width: 150px;
+  text-align: center;
+  opacity: 0.55;
+  padding-top: 10px;
+}
+
+#premium h2{
+  top: 100px;
+}
+.card h2 #basic{
+  height: 10px;
+  width: 100px;
+}
+.card h2, .card ul{
+  margin-left: 20px;
+  align-self: flex-start;
+}
+.card li{
+  list-style-type: square;
+  margin: 10px;
+}
+
+ul i{
+  margin: 10px;
+}
+
+#premium ul {
+  margin-top: 80px;
+}
+.card ul{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+#gold{
+  transform: scale(1.1);
+}
+
+#basic h1, #basic button{
+  background-color: #C0C0C0;
+}
+#gold h1, #gold button{
+  background-color: #FFD700;
+}
+
+#premium h1, #premium button{
+  background-color: #b7d2f5;
+
+}
+
+#premium h1{
+
+  height: 100px;
+}

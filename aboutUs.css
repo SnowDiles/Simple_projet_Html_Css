@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6; /* Light background color */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    transition: background-color 0.3s ease;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #fff; /* Clean white background */
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    border-left: 10px solid #3498db; /* Accent color on the side */
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    background-color: #ecf0f1; /* Light grey hover effect */
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Deep dark blue for the heading */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #3498db; /* Bright blue underline */
+    margin: 20px auto 0;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #7f8c8d; /* Soft grey for the text */
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Typography Enhancements */
+
+p {
+    text-align: justify;
+}
+
+/* Button - Optional */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Primary blue color */
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Links (Optional for future usage) */
+a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+a:hover {
+    border-bottom: 2px solid #3498db;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
